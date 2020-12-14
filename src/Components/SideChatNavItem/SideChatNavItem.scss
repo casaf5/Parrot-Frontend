@@ -1,0 +1,34 @@
+.chat-nav-item {
+	border-bottom: 1px solid #e2e2e2;
+	.header-item-name {
+		padding: 15px 23px 15px 10px;
+		cursor: pointer;
+		align-items: center;
+		.item-counter {
+			margin-left: auto;
+			margin-right: 20px;
+			background-color: #8080803b;
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 12px;
+		}
+		i {
+			position: absolute;
+			right: 23px;
+		}
+	}
+	.item-content {
+		height: 0;
+		overflow: hidden;
+		animation: 0.1s open ease-out forwards;
+	}
+}
+@keyframes open {
+	to {
+		height: max-content;
+	}
+}

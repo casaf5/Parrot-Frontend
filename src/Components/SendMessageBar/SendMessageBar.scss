@@ -1,0 +1,28 @@
+.message-bar {
+	// border: 1px solid #bdc3c7;
+	border-radius: 5px;
+	width: 96%;
+	height: max-content;
+	background-color: white;
+	grid-row: 3/4;
+	margin: 20px auto;
+	outline: none;
+	&.main-chat {
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 0;
+		grid-column: 1/2;
+	}
+
+	.msg-options {
+		i {
+			margin: 5px 10px;
+			&:last-child {
+				margin-left: auto;
+				padding-right: 5px;
+			}
+		}
+	}
+}

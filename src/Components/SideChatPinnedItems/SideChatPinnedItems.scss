@@ -1,0 +1,54 @@
+.pinned-items-container {
+	padding: 0 20px 10px 10px;
+	.pinned-item {
+		border-radius: 5px;
+		border: 1px solid lightgray;
+		padding: 10px;
+		margin: 5px 0;
+		& > * {
+			margin: 2px;
+		}
+		.custom-avatar {
+			width: 20px;
+			height: 20px;
+		}
+		header span {
+			font-family: Poppins-Bold;
+			font-size: 16px;
+			margin-left: 5px;
+		}
+		.fa-plus {
+			padding: 5px;
+			transform: rotate(45deg);
+			font-size: 12px;
+			margin-left: auto;
+			color: #8080808e;
+			transition: 0.2s ease;
+			&:hover {
+				color: black;
+			}
+		}
+		.item-content {
+			font-size: 15px;
+		}
+		.item-comments {
+			font-size: 13px;
+			color: rgb(97, 96, 97);
+		}
+
+		.item-creation {
+			font-size: 13px;
+			color: rgb(97, 96, 97);
+			span:last-child {
+				margin-left: 5px;
+				color: #27a4f8;
+			}
+		}
+	}
+}
+
+.no-pinned-items{
+	padding: 10px;
+	font-size: 13px;
+	color: lightgray;
+}

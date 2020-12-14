@@ -1,0 +1,27 @@
+.about-chat {
+	padding: 0 20px 10px 10px;
+	.sub-item {
+		display: flex;
+		flex-direction: column;
+		padding: 10px 10px;
+		background-color: #80808005;
+		border-radius: 5px;
+		margin-bottom: 2px;
+		.title {
+			color: black;
+			font-size: 13px;
+			font-family: Poppins-Bold;
+		}
+		span {
+			color: gray;
+			font-size: 14px;
+		}
+
+		.MuiAvatar-img,
+		.MuiAvatar-root {
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+		}
+	}
+}

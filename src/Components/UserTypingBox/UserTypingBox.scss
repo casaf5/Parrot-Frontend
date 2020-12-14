@@ -1,0 +1,19 @@
+.typing-box-indication {
+	padding: 5px 0 5px 10px;
+	position: absolute;
+	bottom: 0;
+	font-size: 10px;
+	font-weight: bold;
+	span {
+		animation: flicker 1s infinite backwards alternate;
+	}
+}
+
+@keyframes flicker {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

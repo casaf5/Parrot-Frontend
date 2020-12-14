@@ -1,0 +1,67 @@
+.app-header {
+	background-color: #1a1e22;
+	grid-column: 1/3;
+	grid-row: 1/2;
+	border-bottom: 1px solid #ffffff;
+	position: relative;
+	.main-search-bar {
+		width: 100%;
+		max-width: 400px;
+		height: 22px;
+		border-radius: 5px;
+		outline: none;
+		padding: 10px;
+		font-family: 'Poppins';
+		border: none;
+		text-align: center;
+		&:hover {
+			border: 2px solid rgb(39, 164, 248);
+			cursor: pointer;
+		}
+	}
+	.profile-tag {
+		position: absolute;
+		right: 0;
+		bottom: -33px;
+		height: 30px;
+		width: 150px;
+		background-color: #292828;
+		z-index: 999;
+		color: white;
+		border-radius: 5px;
+		font-size: 12px;
+		transition: 0.5s ease;
+		transform: translateX(100%);
+		opacity: 0;
+	}
+
+	.avatar {
+		color: white;
+		position: absolute;
+		right: 0;
+		background-color: #f1c40f;
+		font-family: Poppins;
+		font-size: 0.8rem;
+		margin-right: 10px;
+		height: 27px;
+		width: 27px;
+		border-radius: 5px;
+		cursor: pointer;
+		filter: brightness(0.8);
+		&:hover {
+			filter: brightness(1);
+		}
+	}
+	.avatar:hover + .profile-tag {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@media (max-width: 480px) {
+	.app-header {
+		.main-search-bar {
+			width: 250px;
+		}
+	}
+}

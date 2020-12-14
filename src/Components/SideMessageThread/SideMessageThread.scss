@@ -1,0 +1,64 @@
+.side-messege-thread {
+	height: 100%;
+	width: 100%;
+	grid-column: 2/3;
+	grid-row: 1/4;
+	position: relative;
+	border-left: 1px solid #e2e2e2;
+	overflow-y: scroll;
+	background-color: white;
+	padding-bottom: 2em;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px auto;
+	z-index: 3;
+	.thread-header {
+		grid-row: 1/2;
+		border-bottom: 1px solid #e2e2e2;
+		padding: 13px 15px 8px;
+		align-items: center;
+		.fa-plus {
+			padding: 10px;
+			border-radius: 50%;
+			transform: rotate(45deg);
+			font-size: 17px;
+			&:hover {
+				background-color: #8080801f;
+			}
+		}
+		.header-sub-title{
+			font-size: 13px;
+		}
+	}
+	.replies-container {
+		padding: 1em 0;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		grid-row: 2/3;
+		.replyed-msg {
+			margin-bottom: 10px;
+		}
+		.divider {
+			height: 1px;
+			width: 76%;
+			background-color: #e2e2e2;
+			// padding: 0 10px;
+		}
+		.replies-bar-wrapper {
+			margin-top: 10px;
+			h6 {
+				// position: absolute;
+				transform: translateY(-50%);
+				width: 16%;
+				color: gray;
+				text-align: center;
+			}
+		}
+		.replies {
+			padding-bottom: 1em;
+			& > * {
+				padding-bottom: 5px;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.members-container {
+	margin-bottom: 5px;
+	li {
+		padding: 2px 0 2px 12px;
+		font-size: 13px;
+		transition: .2s ease-in-out;
+		cursor: pointer;
+		.MuiAvatar-root {
+			width: 25px;
+			height: 25px;
+		}
+		span {
+			margin-left: 10px;
+		}
+		&:hover{
+			background-color: #1776d294;
+		}
+	}
+}

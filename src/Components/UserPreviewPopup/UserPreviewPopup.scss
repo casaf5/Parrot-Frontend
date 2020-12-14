@@ -1,0 +1,57 @@
+.user-preview-popup-wrapper {
+	width: 300px;
+	position: fixed;
+	height: 370px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 0 1px lightgray, 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+	z-index: 100;
+	justify-content: center;
+	align-items: center;
+	.close-screen {
+		width: 200vw;
+		height: 200vh;
+		position: absolute;
+		z-index: 1;
+	}
+	.preview-content {
+		width: 100%;
+		height: 100%;
+		z-index: inherit;
+		justify-items: space-between;
+		img {
+			width: 100%;
+			height: 55%;
+			object-fit: cover;
+		}
+		span {
+			padding: 10px 20px 0px 20px;
+			&:not(:last-of-type):hover {
+				text-decoration: underline;
+			}
+		}
+		.username {
+			font-size: 18px;
+			font-family: Poppins-Bold;
+		}
+		.local-time {
+			font-size: 12px;
+		}
+		.view-profile {
+			color: rgb(39, 164, 248);
+			font-size: 13px;
+		}
+		.btn-pm-message {
+			width: 80px;
+			height: 40px;
+			border-radius: 5px;
+			margin: auto auto 10px;
+			transition: 0.2s ease-in-out;
+			width: 90%;
+			&:hover {
+				background-color: rgba(211, 211, 211, 0.561);
+				cursor: pointer;
+			}
+		}
+	}
+}

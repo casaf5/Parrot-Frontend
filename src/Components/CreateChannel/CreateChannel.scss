@@ -1,0 +1,39 @@
+.create-channel {
+	p {
+		margin-bottom: 20px;
+		color: grey;
+		width: 100%;
+	}
+	.popup-window label {
+		width: 100%;
+		&:last-of-type {
+			margin-top: 20px;
+		}
+	}
+	input {
+		width: 100%;
+		height: 40px;
+		border-radius: 5px;
+		outline: none;
+		border: 1px solid #e9dfdf;
+		margin: 5px 0;
+		padding: 10px;
+		&:focus {
+			border: 2px solid rgb(39, 164, 248);
+		}
+	}
+	.btn-create {
+		width: 80px;
+		height: 40px;
+		border-radius: 5px;
+		align-self: flex-end;
+		margin-top: 20px;
+		transition: 0.2 ease-in-out;
+		cursor: not-allowed;
+		&.sucsses {
+			background-color: #2b9348;
+			color: white;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.select-members-container {
+	height: 100%;
+	.user-preview {
+		align-items: center;
+		padding: 2px 10px;
+		transition: 0.2s ease-in-out;
+		cursor: pointer;
+		span {
+			margin-left: 10px;
+		}
+		.user-status {
+			margin-left: auto;
+			font-size: 12px;
+			padding-right: 10px;
+		}
+		&:hover {
+			background-color: lightgray;
+		}
+	}
+	.user-container-default {
+		overflow-y: scroll;
+	}
+	.user-container-custom {
+		max-height: 220px;
+		background-color: white;
+		width: 105%;
+		align-self: center;
+		padding: 5px 0;
+		border-radius: 5px;
+		overflow: scroll;
+		border: 1px solid lightgray;
+		.disable {
+			pointer-events: none;
+			color: lightgray;
+		}
+	}
+}

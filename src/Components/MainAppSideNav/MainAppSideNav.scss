@@ -1,0 +1,16 @@
+.main-nav {
+	position: fixed;
+	left: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 300px;
+    width: 100px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f46b45, #eea849);
+    align-items: center;
+    justify-content: space-between;
+    i{
+        font-size: 30px;
+        padding:10px 10px 10px 25px;
+    }
+}
